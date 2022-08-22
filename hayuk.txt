@@ -1,0 +1,47 @@
+! Custom filter list by SL
+
+!__________________________ Google & Youtube Ads __________________________
+# Blokir Iklan Youtube
+m.youtube.com##.compact-media-item-image
+|https://m.youtube.com/ptracking?
+|https://m.youtube.com/api/stats/ads?
+|https://www.youtube.com/pcs/activeview?
+||doubleclick.net^
+||youtube.com/annotations_
+youtube.com##.ytp-ce-element-show
+youtube.com##.ytp-ce-element
+youtube.com##.ytp-cards-teaser-text
+youtube.com##.ytp-cards-button-icon-default
+youtube.com##.annotation-type-text.annotation
+youtube.com##.ytp-scroll-min.ytp-pause-overlay
+youtube.com###offer-module > .ytd-watch.style-scope
+youtube.com##.annotation-type-text.annotation-popup-shape.annotation-shape
+youtube.com##.annotation-type-text.annotation-speech-shape.annotation-shape
+youtube.com##.annotation-type-text.annotation-popup-shape.annotation-shape:nth-of-type(3)
+youtube.com##.annotation-type-text.annotation-popup-shape.annotation-shape:nth-of-type(7)
+youtube.com##.annotation-type-text.annotation-popup-shape.annotation-shape:nth-of-type(5)
+youtube.com##.branding-img-container
+/endscreen.js$script,domain=www.youtube.com
+youtube.com/annotations_
+m.youtube.com##ytm-item-section-renderer.scwnr-content:nth-of-type(1) > lazy-list > .item
+youtube.com###chat
+
+# generic sponsored content eliminator
+~google.com##div.result[id*="sponsored"]
+
+!__________________________ Social Media Ads & Tracking __________________________
+! following 6 lines stops FB tracking activity on all websites other than FB, This Concept can be used to restrict your privacy exposure for other "ubiquitous websites" as well.
+* facebook.com * block
+* facebook.net * block
+* fbcdn.net * block
+facebook.com facebook.com * noop
+facebook.com facebook.net * noop
+facebook.com fbcdn.net * noop
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+
+!The same sort of dynamic filtering rules can be used for whatever sites for which you still would want Facebook widgets to work:
+!example.com facebook.com * noop
+!example.com facebook.net * noop
+!example.com fbcdn.net * noop
+
+! Custom filter list by SL
