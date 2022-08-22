@@ -24,6 +24,12 @@ youtube.com##.branding-img-container
 /endscreen.js$script,domain=www.youtube.com
 youtube.com/annotations_
 m.youtube.com##ytm-item-section-renderer.scwnr-content:nth-of-type(1) > lazy-list > .item
+youtube.com##.ytp-ce-covering-overlay
+youtube.com##.ytp-ce-element-shadow
+youtube.com##.ytp-ce-covering-image
+youtube.com##.ytp-ce-expanding-image
+youtube.com##.ytp-ce-element.ytp-ce-video.ytp-ce-element-show
+youtube.com##.ytp-ce-element.ytp-ce-channel.ytp-ce-channel-this
 youtube.com###chat
 youtube.com##.ad-container
 youtube.com###player-ads
