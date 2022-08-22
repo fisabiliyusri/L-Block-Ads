@@ -3,6 +3,8 @@
 !__________________________ Google & Youtube Ads __________________________
 # Blokir Iklan Youtube
 m.youtube.com##.compact-media-item-image
+|m.youtube.com/api/stats/qoe?
+||youtube.com/api/stats/qoe?
 |https://m.youtube.com/ptracking?
 |https://m.youtube.com/api/stats/ads?
 |https://www.youtube.com/pcs/activeview?
